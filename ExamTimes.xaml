@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="WpfApplication1.ExamTimes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication1"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Viewbox>
+            <StackPanel MaxWidth="300">
+                <TextBox Grid.Row="0" Grid.ColumnSpan="2" x:Name="classDetails" Text="Class Details"  ScrollViewer.HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Center" FontSize="25" FontWeight="Bold" VerticalAlignment="Center" BorderThickness="0" />
+            <DockPanel>
+                    <Label Content="Start Time: " FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <TextBox Text="HH:mm AM" VerticalAlignment="Center" FontSize="15" BorderThickness="0" HorizontalAlignment="Right" />
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Reading Time: " FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <TextBox Text="HH:mm AM" FontSize="15" VerticalAlignment="Center" BorderThickness="0" HorizontalAlignment="Right" />
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Writing Time: " FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <TextBox Text="HH:mm AM" FontSize="15" VerticalAlignment="Center" BorderThickness="0" HorizontalAlignment="Right" />
+            </DockPanel>
+                <DockPanel>
+                    <Label Content="Finish Time: " FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <TextBox Text="HH:mm AM" FontSize="15" VerticalAlignment="Center" BorderThickness="0" HorizontalAlignment="Right" />
+                </DockPanel>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</UserControl>
